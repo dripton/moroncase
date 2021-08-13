@@ -1,0 +1,20 @@
+This is a simple little command-line tool to demonstrate simple
+Rust and practice compiling something with rustc.
+
+The license is MIT; see LICENSE.
+
+To build it, check the code out somewhere and then do "cargo build"
+
+To run it, you can use "cargo run".  To make the output interesting, you need
+to add a string argument afterward, like:
+
+cargo run Phantom Menace is the best Star Wars movie
+
+If you want to run this more than once you can copy the compiled binary from
+the target/debug directory into /usr/local/bin or $HOME/bin or wherever you
+want to run it from.
+
+If you want to build in release mode (there's honestly no real point for
+something this tiny, but for a real program the optimizations can matter), you
+can do "cargo build --release" and then copy the binary from target/release
+instead of target/debug.
